@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <audio id="myAudio" autoplay>
+        <source src="style/audio/nature.mp3" type="audio/mp3">
+    </audio>
+    
+    <div class="serch-bar">
+        <div class="serch">
+            <input type="text" placeholder="enter city name" spellcheck="false" id="serch-input-box">
+            <button id="serch-btn"><img src="style/images/search.png" alt="serch-btn"></button>
+        </div>
+        <div class="main-weather display-none">
+            <img alt="weather-icon" id="weather-icon">
+            <h1 id="temp"></h1>
+            <h2 id="city"></h2>
+            <div class="weather-details">
+                <div class="col">
+                    <img src="style/images/humidity.png" alt="humidity">
+                    <h2 id="humidity"></h2>
+                    <p>humidity</p>
+                </div>
+
+                <div class="col">
+                    <img src="style/images/wind.png" alt="wind-speed">
+                    <h2 id="wind-speed" class="h2-tag"></h2>
+                    <p>wind speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/app.js"></script>
+</body>
+</html>
